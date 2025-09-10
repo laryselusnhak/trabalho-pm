@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Delícia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte e fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f4e6; /* Cor de fundo suave */
+    color: #4e4a46;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3e2a47;
+    color: white;
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de introdução */
+#introducao {
+    background-image: url('img/cafeteria.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#introducao h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#introducao p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Seção de especialidades */
+#especialidades {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#especialidades h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #3e2a47;
+}
+
+#especialidades .item {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+}
+
+#especialidades .item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#especialidades .item img:hover {
+    transform: scale(1.05);
+}
+
+#especialidades .item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Seção de promoções */
+#promocoes {
+    background-color: #f9e8e1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#promocoes h2 {
+    font-size: 2rem;
+    color: #3e2a47;
+    margin-bottom: 20px;
+}
+
+#promocoes ul {
+    list-style: none;
+}
+
+#promocoes ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Seção de avaliações */
+#avaliacoes {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+#avaliacoes h2 {
+    font-size: 2rem;
+    color: #3e2a47;
+    margin-bottom: 30px;
+}
+
+.avaliacao {
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.avaliacao p {
+    font-size: 1.1rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #3e2a47;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    #especialidades .item {
+        width: 100%;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #introducao h1 {
+        font-size: 2.5rem;
+    }
+
+    #introducao p {
+        font-size: 1.2rem;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="introducao">
+        <h1>Bem-vindo à Cafeteria Delícia</h1>
+        <p>O melhor café e doces fresquinhos para você!</p>
+    </section>
+    <section id="especialidades">
+        <h2>Especialidades da Casa</h2>
+        <div class="item"> <img src="https://img.freepik.com/fotos-gratis/fotografia-em-close-up-de-uma-xicara-de-cafe-em-um-prato-branco-com-uma-colher-de-metal_181624-27779.jpg?semt=ais_hybrid&w=740&q=80" alt="Café Espresso">
+            <p>Café Espresso</p>
+        </div>
+        <div class="item"> <img src="https://images.ctfassets.net/0e6jqcgsrcye/53teNK4AvvmFIkFLtEJSEx/4d3751dcad227c87b3cf6bda955b1649/Cafe_au_lait.jpg" alt="Café Latte">
+            <p>Café Latte</p>
+        </div>
+        <div class="item"> <img src="https://www.shutterstock.com/image-photo/homemade-cornmeal-cake-bolo-de-600nw-2317348289.jpg" alt="Doces Caseiros">
+            <p>Doces Caseiros</p>
+        </div>
+    </section>
+    <section id="promocoes">
+        <h2>Promoções da Semana</h2>
+        <ul>
+            <li>2 cafés + 1 doce por R$ 15,00</li>
+            <li>Café gelado por R$ 10,00</li>
+            <li>Combo família (4 cafés + 4 doces) por R$ 40,00</li>
+        </ul>
+    </section>
+    <section id="avaliacoes">
+        <h2>Avaliações de Clientes</h2>
+        <div class="avaliacao">
+            <p>"Melhor café que já tomei!" - João</p>
+        </div>
+        <div class="avaliacao">
+            <p>"Ambiente aconchegante e ótimo atendimento." - Maria</p>
+        </div>
+        <div class="avaliacao">
+            <p>"Adoro os doces fresquinhos da cafeteria!" - Carlos</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Cafeteria Delícia. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
